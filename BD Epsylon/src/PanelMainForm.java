@@ -31,27 +31,33 @@ public class PanelMainForm extends JPanel {
     Thread fetch = null;
 
     public void getnPrintAllData(JPanel pan){
-        JTable tableTest = new JTable();
-        String name, supplier, id;
-        DefaultTableModel dtm = new DefaultTableModel();
+        JTable tableTest;
         ResultSet res;
         try{
-            res = (MainForm.conn.prepareStatement("SELECT * FROM ADHERENTS")).executeQuery();
+            res = (MainForm.conn.prepareStatement("SELECT * FROM ADHERENTS", ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY)).executeQuery();
             ResultSetMetaData meta = res.getMetaData();
+
+            String[] columnNames = new String[meta.getColumnCount()];
+
+            for (int i = 0; i < meta.getColumnCount(); i++)
+                columnNames[i] = meta.getColumnName(i+1);
+
             int numberOfColumns = meta.getColumnCount();
-            while (res.next())
+            int numberOfRows = 0;
+            while(res.next()) numberOfRows++;
+            res.beforeFirst();
+            Object [][] data2 = new Object[numberOfRows][numberOfColumns];
+            for (int j = 0; j < numberOfRows; j++)
             {
-                Object [] rowData = new Object[numberOfColumns];
-                for (int i = 0; i < rowData.length; ++i)
+                res.next();
+                for (int i = 0; i < numberOfColumns; ++i)
                 {
-                    rowData[i] = res.getObject(i+1);
+                    data2[j][i] = res.getObject(i+1);
                 }
-                dtm.addRow(rowData);
             }
-            tableTest.setModel(dtm);
             //////////////////////////
+            tableTest = new JTable(data2, columnNames);
             pan.add(tableTest);
-            dtm.fireTableDataChanged();
         }
         catch(Exception e){
             System.err.println(e);
@@ -63,10 +69,6 @@ public class PanelMainForm extends JPanel {
     public PanelMainForm() {
         setLayout(new GridLayout(0, 1)); // une seule colonne
 
-
-
-
-
         // rangée 0
         JLabel labelAdresse = new JLabel("Adresse IP");
         JPanel pan0 = new JPanel();
@@ -77,9 +79,9 @@ public class PanelMainForm extends JPanel {
         Object[][] data = {{"Kathy", "Smith"},{"John", "Doe"}};
         JTable table = new JTable(data, columnNames);
         table.setFillsViewportHeight(true);
+        pan0.add(table);
 
         getnPrintAllData(pan0);
     }
-
 
 }
