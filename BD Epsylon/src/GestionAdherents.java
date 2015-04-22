@@ -42,7 +42,7 @@ public class GestionAdherents {
             fetchAll = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             rst = fetchAll.executeQuery(fetchInfo);
             rst.first();
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -55,7 +55,7 @@ public class GestionAdherents {
                     if (!rst.next())
                         rst.first();
                     updateLabels();
-                } catch (SQLException e1) {
+                } catch (Exception e1) {
                     e1.printStackTrace();
                 }
             }
@@ -68,7 +68,7 @@ public class GestionAdherents {
                     if (!rst.previous())
                             rst.last();
                     updateLabels();
-                } catch (SQLException e1) {
+                } catch (Exception e1) {
                     e1.printStackTrace();
                 }
             }
@@ -85,7 +85,7 @@ public class GestionAdherents {
                     insertStatement.setString(3, TBX_Adresse.getText());
                     insertStatement.setString(4, TBX_Tel.getText());
                     System.out.println(insertStatement.executeUpdate());
-                } catch (SQLException ex) {
+                } catch (Exception ex) {
                     ex.printStackTrace();
                 }
                 RefreshResultSet();
@@ -105,7 +105,7 @@ public class GestionAdherents {
                     updateStatement.setString(4, TBX_Tel.getText());
                     updateStatement.setInt(5, rst.getInt(1));
                     System.out.println(updateStatement.executeUpdate());
-                } catch (SQLException ex) {
+                } catch (Exception ex) {
                     ex.printStackTrace();
                 }
                 RefreshResultSet();
@@ -121,7 +121,7 @@ public class GestionAdherents {
                     PreparedStatement deleteStatement = conn.prepareStatement(parameteredUpdate);
                     deleteStatement.setInt(1, rst.getInt(1));
                     System.out.println(deleteStatement.executeUpdate());
-                } catch (SQLException ex) {
+                } catch (Exception ex) {
                     ex.printStackTrace();
                 }
                 RefreshResultSet();
@@ -136,7 +136,7 @@ public class GestionAdherents {
             TBX_Prenom.setText(rst.getString(3));
             TBX_Adresse.setText(rst.getString(4));
             TBX_Tel.setText(rst.getString(5));
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -39,7 +39,7 @@ public class ConsulterLivres {
             CMBBOX_Genres.setSelectedIndex(1);
 
 
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -67,7 +67,7 @@ public class ConsulterLivres {
             fetchAll = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             rst = fetchAll.executeQuery(fetchInfo);
             rst.first();
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -80,7 +80,7 @@ public class ConsulterLivres {
                     if (!rst.next())
                         rst.first();
                     updateLabels();
-                } catch (SQLException e1) {
+                } catch (Exception e1) {
                     e1.printStackTrace();
                 }
             }
@@ -93,7 +93,7 @@ public class ConsulterLivres {
                     if (!rst.previous())
                         rst.last();
                     updateLabels();
-                } catch (SQLException e1) {
+                } catch (Exception e1) {
                     e1.printStackTrace();
                 }
             }
@@ -107,7 +107,7 @@ public class ConsulterLivres {
             LBL_Genre.setText(rst.getString(4));
             LBL_DateParution.setText(rst.getString(5));
             LBL_MaisonEdition.setText(rst.getString(6));
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
