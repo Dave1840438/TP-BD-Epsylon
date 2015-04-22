@@ -190,7 +190,6 @@ public class Main {
         String parameteredSelect = "SELECT NOMEMP, PRENOMEMP, EMPLOI FROM EMPLOYESBIDON WHERE EMPLOI = ?";
         String fetchAll = "SELECT * FROM EMPLOYESBIDON";
 
-
         try
         {
             PreparedStatement insertStatement = conn.prepareStatement(parameteredInsertion);

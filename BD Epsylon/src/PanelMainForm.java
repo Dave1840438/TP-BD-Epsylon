@@ -83,5 +83,4 @@ public class PanelMainForm extends JPanel {
 
         getnPrintAllData(pan0);
     }
-
 }
