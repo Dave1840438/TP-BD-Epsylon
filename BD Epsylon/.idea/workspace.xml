@@ -28,41 +28,59 @@
       <file leaf-file-name="PretsEnCours.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PretsEnCours.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="1207">
-              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="62" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="1207">
+              <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#787#795#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="2244">
-              <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.4475" vertical-offset="1895" max-vertical-offset="3060">
+              <caret line="137" column="118" selection-start-line="137" selection-start-column="118" selection-end-line="137" selection-end-column="118" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2398#2796#0" expanded="true" />
-                <element signature="e#2795#2796#0" expanded="true" />
-                <element signature="e#3562#3570#0" expanded="true" />
+                <element signature="e#5052#7502#0" expanded="true" />
+                <element signature="e#7501#7502#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RechercheLivre.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainMenu.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainMenu.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RechercheLivre.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RechercheLivre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46489105" vertical-offset="726" max-vertical-offset="1445">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1462">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#1227#1235#0" expanded="true" />
+                <element signature="e#621#1026#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="e#1066#1470#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsulterLivres.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ConsulterLivres.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="1887">
+              <caret line="59" column="0" selection-start-line="58" selection-start-column="8" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,6 +90,18 @@
         <entry file="file://$PROJECT_DIR$/src/RechercheLivre.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaisirUnPret.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SaisirUnPret.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1377">
+              <caret line="36" column="80" selection-start-line="36" selection-start-column="80" selection-end-line="36" selection-end-column="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -88,20 +118,19 @@
         <option value="$PROJECT_DIR$/src/ConsulterLivres.java" />
         <option value="$PROJECT_DIR$/src/GestionAdherents.java" />
         <option value="$PROJECT_DIR$/src/SaisirUnPret.form" />
-        <option value="$PROJECT_DIR$/src/SaisirUnPret.java" />
-        <option value="$PROJECT_DIR$/src/MainMenu.form" />
         <option value="$PROJECT_DIR$/src/PretsEnCours.form" />
         <option value="$PROJECT_DIR$/src/PanelMainForm.java" />
         <option value="$PROJECT_DIR$/src/PretsEnCours.java" />
-        <option value="$PROJECT_DIR$/src/RechercheLivre.form" />
-        <option value="$PROJECT_DIR$/src/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/RechercheLivre.java" />
+        <option value="$PROJECT_DIR$/src/RechercheLivre.form" />
+        <option value="$PROJECT_DIR$/src/SaisirUnPret.java" />
+        <option value="$PROJECT_DIR$/src/MainMenu.form" />
+        <option value="$PROJECT_DIR$/src/MainMenu.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="178" />
-    <option name="y" value="284" />
+    <option name="x" value="2" />
     <option name="width" value="1364" />
     <option name="height" value="728" />
   </component>
@@ -128,6 +157,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -159,6 +189,24 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SaisirUnPret" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BD Epsylon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BD Epsylon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -174,14 +222,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RechercheLivre" />
+              <option name="myItemId" value="MainMenu" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BD Epsylon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BD Epsylon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConsulterLivres" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -456,7 +521,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="178" y="284" width="1364" height="728" extended-state="0" />
+    <frame x="2" y="0" width="1364" height="728" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -503,7 +568,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RechercheLivre.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -512,6 +585,47 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/PretsEnCours.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="1207">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="62" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2448">
+          <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5052#7502#0" expanded="true" />
+            <element signature="e#7501#7502#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RechercheLivre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#621#1026#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1066#1470#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RechercheLivre.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ConsulterLivres.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
@@ -528,8 +642,8 @@
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1955#2349#0" expanded="true" />
-            <element signature="e#2348#2349#0" expanded="true" />
+            <element signature="e#5052#7502#0" expanded="true" />
+            <element signature="e#7501#7502#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -543,10 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,9 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="4267">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -564,10 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -579,16 +682,6 @@
     <entry file="file://$PROJECT_DIR$/src/ConsulterLivres.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConsulterLivres.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4827585" vertical-offset="421" max-vertical-offset="1887">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="43" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SaisirUnPret.form">
@@ -606,28 +699,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainMenu.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SaisirUnPret.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44" vertical-offset="487" max-vertical-offset="1411">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#652#1487#0" expanded="true" />
-            <element signature="e#1486#1487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PanelMainForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4475" vertical-offset="484" max-vertical-offset="1224">
           <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,7 +715,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.795" vertical-offset="3611" max-vertical-offset="4216">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConsulterLivres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="1887">
+          <caret line="59" column="0" selection-start-line="58" selection-start-column="8" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PretsEnCours.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="1207">
+          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RechercheLivre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1462">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#621#1026#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1066#1470#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -649,39 +757,29 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SaisirUnPret.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="1377">
+          <caret line="36" column="80" selection-start-line="36" selection-start-column="80" selection-end-line="36" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainMenu.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="2244">
-          <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.4475" vertical-offset="1895" max-vertical-offset="3060">
+          <caret line="137" column="118" selection-start-line="137" selection-start-column="118" selection-end-line="137" selection-end-column="118" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2398#2796#0" expanded="true" />
-            <element signature="e#2795#2796#0" expanded="true" />
-            <element signature="e#3562#3570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PretsEnCours.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="1207">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="62" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#787#795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RechercheLivre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46489105" vertical-offset="726" max-vertical-offset="1445">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#1227#1235#0" expanded="true" />
+            <element signature="e#5052#7502#0" expanded="true" />
+            <element signature="e#7501#7502#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -19,6 +19,7 @@ public class RechercheLivre {
     public RechercheLivre(Connection conn)
     {
         this.conn = conn;
+        addListeners();
     }
 
     public void addListeners()
@@ -26,14 +27,14 @@ public class RechercheLivre {
         BTN_Auteur.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                CreateTableResults("SELECT L.NUMERO, L.TITRE, L.AUTEUR, G.DESCRIPTION, L.DATEPARUTION, M.NOM FROM LIVRES L INNER JOIN GENRES G ON G.NUMERO = L.GENRE INNER JOIN MAISONSEDITION M ON M.NUMERO = L.MAISONEDITION WHERE AUTEUR LIKE '%" + TBX_Recherche.getText() + "%'");
             }
         });
 
         BTN_Titre.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                CreateTableResults("SELECT L.NUMERO, L.TITRE, L.AUTEUR, G.DESCRIPTION, L.DATEPARUTION, M.NOM FROM LIVRES L INNER JOIN GENRES G ON G.NUMERO = L.GENRE INNER JOIN MAISONSEDITION M ON M.NUMERO = L.MAISONEDITION WHERE TITRE LIKE '%" + TBX_Recherche.getText() + "%'");
             }
         });
     }
@@ -63,7 +64,7 @@ public class RechercheLivre {
                 data.add(range);
             }
             //////////////////////////
-            JFrame tableFrame = new JFrame("Allo test");
+            JFrame tableFrame = new JFrame("Résultat de la recherche");
 
             JTable laTable = new JTable(data, columnNames);
             JScrollPane scrollPane = new JScrollPane(laTable);

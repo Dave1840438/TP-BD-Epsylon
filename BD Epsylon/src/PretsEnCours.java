@@ -47,7 +47,7 @@ public class PretsEnCours {
                 data.add(range);
             }
             //////////////////////////
-            JFrame tableFrame = new JFrame("Allo test");
+            JFrame tableFrame = new JFrame("Prêts en cours");
 
             laTable = new JTable(data, columnNames);
             JScrollPane scrollPane = new JScrollPane(laTable);

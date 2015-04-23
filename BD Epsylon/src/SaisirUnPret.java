@@ -33,7 +33,8 @@ public class SaisirUnPret {
                 try {
                     PreparedStatement insertStatement = conn.prepareStatement(parameteredInsertion);
                     insertStatement.setString(1, (String)CMBBOX_Exemplaires.getSelectedItem());
-                    insertStatement.setInt(2, Integer.parseInt(((String) CMBBOX_Users.getSelectedItem()).substring(0, 2)));
+
+                    insertStatement.setInt(2, Integer.parseInt(((String) CMBBOX_Users.getSelectedItem()).replaceAll("[^0-9]+", " ").trim()));
                     System.out.println(insertStatement.executeUpdate());
                     RefreshInfo();
                 } catch (Exception ex) {
@@ -46,7 +47,7 @@ public class SaisirUnPret {
     public void RefreshInfo()
     {
         String fetchUsers = "SELECT NUMERO, NOM, PRENOM FROM ADHERENTS";
-        String fetchExemplaires = "SELECT L.TITRE FROM EXEMPLAIRES E INNER JOIN LIVRES L ON L.NUMERO = E.LIVRE WHERE E.NUMERO NOT IN (SELECT NUMEROEXEMPLAIRE FROM EMPRUNTS)";
+        String fetchExemplaires = "SELECT L.TITRE FROM EXEMPLAIRES E INNER JOIN LIVRES L ON L.NUMERO = E.LIVRE WHERE E.NUMERO NOT IN (SELECT NUMEROEXEMPLAIRE FROM EMPRUNTS WHERE DATERETOUR >= SYSDATE)";
 
         try {
             Statement stfetchUsers = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
