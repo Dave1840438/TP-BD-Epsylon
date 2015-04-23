@@ -64,7 +64,7 @@ public class MainMenu {
             public void actionPerformed(ActionEvent e) {
                 JFrame frame = new JFrame("SaisirUnPret");
                 frame.setContentPane(new SaisirUnPret(conn).lePanel);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
             }
@@ -75,7 +75,7 @@ public class MainMenu {
             public void actionPerformed(ActionEvent e) {
                 JFrame frame = new JFrame("RechercheLivre");
                 frame.setContentPane(new RechercheLivre(conn).lePanel);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setVisible(true);
             }
@@ -115,6 +115,7 @@ public class MainMenu {
 
                     JTable laTable = new JTable(data, columnNames);
                     JScrollPane scrollPane = new JScrollPane(laTable);
+                    tableFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     tableFrame.getContentPane().add(scrollPane);
                     tableFrame.setSize(1200, 500);
                     tableFrame.setVisible(true);
@@ -166,6 +167,7 @@ public class MainMenu {
 
                     JTable laTable = new JTable(data, columnNames);
                     JScrollPane scrollPane = new JScrollPane(laTable);
+                    tableFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     tableFrame.getContentPane().add(scrollPane);
                     tableFrame.setSize(1200, 500);
                     tableFrame.setVisible(true);

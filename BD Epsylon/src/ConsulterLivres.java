@@ -36,7 +36,7 @@ public class ConsulterLivres {
                 String item = rstGenres.getString(2);
                 CMBBOX_Genres.addItem(item);
             }
-            CMBBOX_Genres.setSelectedIndex(1);
+            CMBBOX_Genres.setSelectedIndex(0);
 
 
         } catch (Exception e) {

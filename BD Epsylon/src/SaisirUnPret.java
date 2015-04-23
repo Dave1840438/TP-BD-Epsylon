@@ -29,10 +29,10 @@ public class SaisirUnPret {
         BTNEmprunt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String parameteredInsertion = "INSERT INTO EMPRUNTS VALUES((SELECT DISTINCT(NUMERO) FROM LIVRES WHERE TITRE = ?), ?, SYSDATE, SYSDATE + 21)";
+                String parameteredInsertion = "INSERT INTO EMPRUNTS VALUES(?, ?, SYSDATE, SYSDATE + 21)";
                 try {
                     PreparedStatement insertStatement = conn.prepareStatement(parameteredInsertion);
-                    insertStatement.setString(1, (String)CMBBOX_Exemplaires.getSelectedItem());
+                    insertStatement.setInt(1, Integer.parseInt(((String) CMBBOX_Exemplaires.getSelectedItem()).replaceAll("[^0-9]+", " ").trim()));
 
                     insertStatement.setInt(2, Integer.parseInt(((String) CMBBOX_Users.getSelectedItem()).replaceAll("[^0-9]+", " ").trim()));
                     System.out.println(insertStatement.executeUpdate());
@@ -46,8 +46,10 @@ public class SaisirUnPret {
 
     public void RefreshInfo()
     {
+        CMBBOX_Exemplaires.removeAllItems();
+        CMBBOX_Users.removeAllItems();
         String fetchUsers = "SELECT NUMERO, NOM, PRENOM FROM ADHERENTS";
-        String fetchExemplaires = "SELECT L.TITRE FROM EXEMPLAIRES E INNER JOIN LIVRES L ON L.NUMERO = E.LIVRE WHERE E.NUMERO NOT IN (SELECT NUMEROEXEMPLAIRE FROM EMPRUNTS WHERE DATERETOUR >= SYSDATE)";
+        String fetchExemplaires = "SELECT E.NUMERO, L.TITRE FROM EXEMPLAIRES E INNER JOIN LIVRES L ON L.NUMERO = E.LIVRE WHERE E.NUMERO NOT IN (SELECT NUMEROEXEMPLAIRE FROM EMPRUNTS WHERE DATERETOUR >= SYSDATE) ";
 
         try {
             Statement stfetchUsers = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
@@ -64,7 +66,7 @@ public class SaisirUnPret {
 
             while(rstExemplaires.next())
             {
-                String item = rstExemplaires.getString(1);
+                String item = rstExemplaires.getString(1) + ": " + rstExemplaires.getString(2);
                 CMBBOX_Exemplaires.addItem(item);
             }
             CMBBOX_Exemplaires.setSelectedIndex(1);
