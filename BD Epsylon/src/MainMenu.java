@@ -84,7 +84,11 @@ public class MainMenu {
         BTNEmprunts.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String request = "SELECT L.TITRE, G.DESCRIPTION, E.DATEDEBUT, E.DATERETOUR, AD.NOM, AD.PRENOM FROM EMPRUNTS E INNER JOIN LIVRES L ON L.NUMERO = E.NUMEROEXEMPLAIRE INNER JOIN GENRES G ON G.NUMERO = L.GENRE INNER JOIN ADHERENTS AD ON AD.NUMERO = E.NUMEROADHERENT WHERE SYSDATE < E.DATERETOUR";
+                String request = "SELECT L.TITRE, G.DESCRIPTION, E.DATEDEBUT, E.DATERETOUR, AD.NOM, AD.PRENOM FROM EMPRUNTS E " +
+                        "INNER JOIN EXEMPLAIRES EX ON EX.NUMERO = E.NUMEROEXEMPLAIRE " +
+                        "INNER JOIN LIVRES L ON L.NUMERO = EX.LIVRE " +
+                        "INNER JOIN GENRES G ON G.NUMERO = L.GENRE " +
+                        "INNER JOIN ADHERENTS AD ON AD.NUMERO = E.NUMEROADHERENT WHERE SYSDATE <= E.DATERETOUR";
                 ResultSet res;
                 try{
                     res = (conn.prepareStatement(request, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY)).executeQuery();
